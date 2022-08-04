@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'ru.dinar'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //implementation 'org.hibernate:hibernate-validator:7.0.4.Final'
+    implementation 'org.hibernate:hibernate-validator-cdi:7.0.4.Final'
+    testImplementation 'org.glassfish:jakarta.el:4.0.1'
+    //implementation 'jakarta.el:jakarta.el-api:5.0.0'
+    //implementation 'com.sun.el:el-ri:3.0.4'
+    //implementation 'javax.el:el-api:2.2'
+
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
